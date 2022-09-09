@@ -1,0 +1,99 @@
+.projectItem {
+  border: 1px solid #ccc;
+  display: flex;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  overflow: hidden;
+  height: 200px;
+}
+
+.projectItem .projectImage {
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectItem .projectImage:hover {
+  cursor: pointer;
+}
+
+.projectItem .projectDetails {
+  padding: 10px;
+  text-align: left;
+  flex: 1;
+  position: relative;
+}
+
+.projectItem .projectDetails h1 {
+  padding: 10px 0;
+  text-align: left;
+  font-size: 24px;
+
+  font-weight: 500;
+  height: 50px;
+}
+
+.projectItem .projectDetails h1:hover {
+  cursor: pointer;
+}
+
+.projectItem .projectDetails p {
+  font-size: 15px;
+  color: #424242;
+  overflow: hidden;
+}
+
+.projectTags {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  padding: 2px 2px;
+  width: 100px;
+  gap: 5px;
+  color: #fff;
+  background-color: #21325e;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectItem {
+    display: block;
+    height: 440px;
+  }
+  .projectItem .projectImage {
+    width: auto;
+  }
+
+  .projectTags {
+    position: block;
+  }
+
+  .projectItem .projectDetails p {
+    height: 170px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1370px) {
+  .projectItem .projectDetails h1 {
+    font-size: 20px;
+    height: 30px;
+  }
+
+  .projectItem .projectDetails p {
+    padding: 10px 0;
+    height: 135px;
+  }
+}

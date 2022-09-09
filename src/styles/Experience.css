@@ -1,0 +1,145 @@
+.experience {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px auto;
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.experience h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.timeline {
+  position: relative;
+  padding: 3em 0;
+  width: 90%;
+  margin: 2em 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(80, 80, 80, 0) 0%,
+    #394e85 8%,
+    #21325e 92%,
+    rgba(80, 80, 80, 0) 100%
+  );
+}
+
+.experienceWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 150px;
+}
+
+.experienceWrapper:nth-of-type(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+}
+
+.experienceCard {
+  width: 50%;
+  padding: 7px 30px;
+  display: flex;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.experienceIcon svg {
+  border: 5px solid #fff;
+  background: #21325e;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 3px;
+  color: #fff;
+}
+
+.experienceWrapper:nth-of-type(odd) .experienceIcon {
+  position: absolute;
+  right: -32px;
+}
+
+.experienceWrapper:nth-of-type(even) .experienceIcon {
+  position: absolute;
+  left: -30px;
+}
+
+.experienceTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #21325e;
+  margin-bottom: 7px;
+}
+
+.experienceTitle span {
+  font-weight: 600;
+}
+
+.exprienceDesc {
+  color: #47525c;
+  font-size: 16px;
+  height: 110px;
+  text-align: justify;
+  text-justify: inter-word;
+  overflow: hidden;
+}
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+  .timeline:before {
+    left: 12px;
+  }
+
+  .experienceCard {
+    width: 100%;
+    left: 15px;
+  }
+
+  .experienceIcon svg {
+    border: 3px solid #fff;
+    background: #21325e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 1px;
+    color: #fff;
+  }
+
+  .experienceWrapper:nth-of-type(even) .experienceIcon {
+    position: absolute;
+    left: -20px;
+  }
+  .experienceWrapper:nth-of-type(odd) .experienceIcon {
+    position: absolute;
+    left: -20px;
+  }
+
+  .experienceTitle {
+    display: block;
+  }
+}
+
+/* Tablet */
+/* @media only screen and (min-width: 321px) and (max-width: 1250px) {
+  .timeline {
+    width: 100%;
+    padding: 1em;
+  }
+} */
