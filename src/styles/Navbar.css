@@ -3,9 +3,12 @@
   height: 70px;
   width: 100%;
   display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+}
+
+.navbar__wrapper {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
 }
 
 .brand-logo {
@@ -64,6 +67,9 @@ h3 {
 
 /* Small than 600px */
 @media only screen and (max-width: 600px) {
+  .navbar__wrapper {
+    width: 100%;
+  }
   #close .toggleButton {
     display: flex;
     align-items: center;

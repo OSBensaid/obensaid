@@ -13,19 +13,21 @@ function Navbar() {
 
   return (
     <div className="navbar" id={taggleMenu ? "open" : "close"}>
-      <div className="brand-logo">
-        <h3>OBENSAID</h3>
-      </div>
-      <div className="toggleButton">
-        <button onClick={() => setToggleMenu((prev) => !prev)}>
-          {taggleMenu ? <CloseIcon /> : <ReorderIcon />}
-        </button>
-      </div>
-      <div className="links">
-        <Link to="/">Home</Link>
+      <div className="navbar__wrapper">
+        <div className="brand-logo">
+          <h3>OBENSAID</h3>
+        </div>
+        <div className="toggleButton">
+          <button onClick={() => setToggleMenu((prev) => !prev)}>
+            {taggleMenu ? <CloseIcon /> : <ReorderIcon />}
+          </button>
+        </div>
+        <div className="links">
+          <Link to="/">Home</Link>
 
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/experience">Experience</Link>
+        </div>
       </div>
     </div>
   );

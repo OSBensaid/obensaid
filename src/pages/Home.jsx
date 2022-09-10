@@ -10,10 +10,18 @@ function Home() {
   const topLocation = useRef(null);
 
   const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
+    window.history.replaceState({}, document.title);
+    if (elementRef.current.className === "home") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <div className="home" ref={topLocation}>
@@ -26,15 +34,15 @@ function Home() {
             <EmailIcon />
             <GitHubIcon />
           </div>
+          <button
+            onClick={() => {
+              scrollToSection(skillLocation);
+            }}
+            className="navigationBtn"
+          >
+            <KeyboardArrowDownIcon />
+          </button>
         </div>
-        <button
-          onClick={() => {
-            scrollToSection(skillLocation);
-          }}
-          className="navigationBtn"
-        >
-          <KeyboardArrowDownIcon />
-        </button>
       </div>
       <div className="skills" ref={skillLocation}>
         <h1>Skills</h1>
