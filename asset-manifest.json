@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/obensaid/static/css/main.72d172f5.css",
-    "main.js": "/obensaid/static/js/main.0802cb52.js",
+    "main.css": "/obensaid/static/css/main.e88cca3a.css",
+    "main.js": "/obensaid/static/js/main.a799c0cb.js",
     "static/media/006.jpg": "/obensaid/static/media/006.1af38b6a7a416b975b8c.jpg",
     "static/media/002.jpg": "/obensaid/static/media/002.e5b535301537f448f639.jpg",
     "static/media/001.png": "/obensaid/static/media/001.8ee0287576d7bd45c2e0.png",
@@ -9,11 +9,11 @@
     "static/media/004.webp": "/obensaid/static/media/004.1162e41860af681fef0c.webp",
     "static/media/003.jpg": "/obensaid/static/media/003.a374c82d6da7d71ff031.jpg",
     "index.html": "/obensaid/index.html",
-    "main.72d172f5.css.map": "/obensaid/static/css/main.72d172f5.css.map",
-    "main.0802cb52.js.map": "/obensaid/static/js/main.0802cb52.js.map"
+    "main.e88cca3a.css.map": "/obensaid/static/css/main.e88cca3a.css.map",
+    "main.a799c0cb.js.map": "/obensaid/static/js/main.a799c0cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.72d172f5.css",
-    "static/js/main.0802cb52.js"
+    "static/css/main.e88cca3a.css",
+    "static/js/main.a799c0cb.js"
   ]
 }
