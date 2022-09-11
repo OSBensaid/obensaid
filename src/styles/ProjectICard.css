@@ -2,15 +2,17 @@
   border: 1px solid #ccc;
   display: flex;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-  overflow: hidden;
-  height: 200px;
+  min-height: 300px;
 }
 
 .projectItem .projectImage {
-  width: 350px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 450px;
+  height: 300px;
+}
+
+.projectItem .projectImage img {
+  width: 100%;
+  height: 100%;
 }
 
 .projectItem .projectImage:hover {
@@ -19,58 +21,70 @@
 
 .projectItem .projectDetails {
   padding: 10px;
-  text-align: left;
   flex: 1;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .projectItem .projectDetails h1 {
-  padding: 10px 0;
+  height: auto;
   text-align: left;
   font-size: 24px;
-
   font-weight: 500;
-  height: 50px;
+  color: #21325e;
 }
 
 .projectItem .projectDetails h1:hover {
   cursor: pointer;
 }
 
+.projectItem .projectDetails .projectTags {
+  padding: 5px 0;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
 .projectItem .projectDetails p {
+  line-height: 1.5em;
   font-size: 15px;
   color: #424242;
-  overflow: hidden;
+  flex: 1;
+  margin-bottom: 20px;
 }
 
-.projectTags {
-  position: absolute;
-  bottom: 0;
+.projectBtns {
   display: flex;
-  width: 100%;
   justify-content: flex-end;
-  padding-right: 10px;
+  width: 100%;
 }
 
-.tag {
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 7px;
-  padding: 2px 2px;
-  width: 100px;
-  gap: 5px;
-  color: #fff;
-  background-color: #21325e;
+
+  border-radius: 5px;
+  padding: 5px 14px;
+  color: #21325e;
+  background-color: transparent;
+  border: 2px solid #21325e;
   cursor: pointer;
+  text-decoration: none;
+  height: 40px;
+}
+
+.btn:first-of-type {
+  margin-right: 0.5em;
+}
+
+.btn svg {
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
   .projectItem {
     display: block;
-    height: 440px;
   }
   .projectItem .projectImage {
     width: auto;
@@ -81,12 +95,12 @@
   }
 
   .projectItem .projectDetails p {
-    height: 170px;
+    max-height: 170px;
   }
 }
 
 /* Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1370px) {
+/* @media only screen and (min-width: 601px) and (max-width: 1370px) {
   .projectItem .projectDetails h1 {
     font-size: 20px;
     height: 30px;
@@ -96,4 +110,4 @@
     padding: 10px 0;
     height: 135px;
   }
-}
+} */

@@ -122,7 +122,13 @@
 /* Small than 600px */
 @media only screen and (max-width: 600px) {
   .about h2 {
-    font-size: 40px;
+    font-size: 20px;
+    width: 350px;
+  }
+
+  .about h2 .name {
+    margin: 10px;
+    font-size: 30px;
     width: 350px;
   }
 

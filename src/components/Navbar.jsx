@@ -15,7 +15,9 @@ function Navbar() {
     <div className="navbar" id={taggleMenu ? "open" : "close"}>
       <div className="navbar__wrapper">
         <div className="brand-logo">
-          <h3>OBENSAID</h3>
+          <Link to="/">
+            <h3>OBENSAID</h3>
+          </Link>
         </div>
         <div className="toggleButton">
           <button onClick={() => setToggleMenu((prev) => !prev)}>

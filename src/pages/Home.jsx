@@ -27,7 +27,10 @@ function Home() {
   return (
     <div className="home" ref={topLocation}>
       <div className="about">
-        <h2>Hello I'm, Oussama Bensaid</h2>
+        <h2>
+          Hello I'm
+          <div className="name">Oussama Bensaid</div>
+        </h2>
         <div className="prompt">
           <p>A software developer with passion for learning and creating.</p>
           <div className="links">
