@@ -18,7 +18,8 @@ function Home() {
       });
     } else {
       window.scrollTo({
-        top: elementRef.current.offsetTop,
+        left: 0,
+        top: document.body.scrollHeight,
         behavior: "smooth",
       });
     }
