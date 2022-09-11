@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/obensaid/static/css/main.441ebc23.css",
+    "main.css": "/obensaid/static/css/main.bbaf46cd.css",
     "main.js": "/obensaid/static/js/main.398f2311.js",
     "static/media/006.jpg": "/obensaid/static/media/006.1af38b6a7a416b975b8c.jpg",
     "static/media/002.jpg": "/obensaid/static/media/002.e5b535301537f448f639.jpg",
@@ -9,11 +9,11 @@
     "static/media/004.webp": "/obensaid/static/media/004.1162e41860af681fef0c.webp",
     "static/media/003.jpg": "/obensaid/static/media/003.a374c82d6da7d71ff031.jpg",
     "index.html": "/obensaid/index.html",
-    "main.441ebc23.css.map": "/obensaid/static/css/main.441ebc23.css.map",
+    "main.bbaf46cd.css.map": "/obensaid/static/css/main.bbaf46cd.css.map",
     "main.398f2311.js.map": "/obensaid/static/js/main.398f2311.js.map"
   },
   "entrypoints": [
-    "static/css/main.441ebc23.css",
+    "static/css/main.bbaf46cd.css",
     "static/js/main.398f2311.js"
   ]
 }
