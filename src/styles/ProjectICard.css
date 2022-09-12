@@ -88,6 +88,7 @@
   }
   .projectItem .projectImage {
     width: auto;
+    height: 230px;
   }
 
   .projectTags {

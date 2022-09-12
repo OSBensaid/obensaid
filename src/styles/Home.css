@@ -23,6 +23,10 @@
   width: 500px;
 }
 
+.about .prompt {
+  min-height: 200px;
+}
+
 .about .prompt p {
   font-size: 20px;
   text-align: left;
@@ -32,7 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 40px 0;
+  margin-top: 10px;
 }
 .prompt .links svg {
   font-size: 40px;
@@ -40,19 +44,49 @@
   color: white;
 }
 
-.navigationBtn {
-  bottom: 150px;
-  background: transparent;
-  border-radius: 50%;
-  border: 1px solid #e9d35b;
+.scrollContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
   color: #e9d35b;
-  cursor: pointer;
-  animation: blink 1s ease-in-out alternate infinite;
+  height: 100%;
 }
 
-.navigationBtn svg {
-  font-size: 40px;
-  display: flex;
+.crollDown {
+  border: 2px solid #e9d35b;
+  border-radius: 20px;
+  height: 50px;
+  width: 30px;
+  position: relative;
+}
+
+.crollDown::before {
+  animation: MoveAnimation 2s infinite;
+  background-color: #e9d35b;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+}
+
+@keyframes MoveAnimation {
+  0% {
+    transform: translate(-50%, 7px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 30px);
+    opacity: 0;
+  }
 }
 
 .skills {
@@ -79,6 +113,7 @@
 .skills .list {
   margin: 10px 0;
   list-style: none;
+  flex: 1;
 }
 
 .skills .list .item {
@@ -93,30 +128,6 @@
 
 .list span {
   font-size: 18px;
-}
-
-.navigationTop {
-  background: transparent;
-  border-radius: 50%;
-  width: 40px;
-  border: 1px solid #3e497a;
-  color: #3e497a;
-  cursor: pointer;
-  animation: blink 1s ease-in-out alternate infinite;
-}
-
-.navigationTop svg {
-  font-size: 40px;
-  display: flex;
-}
-
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 /* Small than 600px */

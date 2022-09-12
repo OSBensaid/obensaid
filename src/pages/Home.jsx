@@ -1,31 +1,10 @@
 import EmailIcon from "@mui/icons-material/Email";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { useRef } from "react";
 import "../styles/Home.css";
 function Home() {
-  const skillLocation = useRef(null);
-  const topLocation = useRef(null);
-
-  const scrollToSection = (elementRef) => {
-    window.history.replaceState({}, document.title);
-    if (elementRef.current.className === "home") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    } else {
-      window.scrollTo({
-        left: 0,
-        top: document.body.scrollHeight,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
-    <div className="home" ref={topLocation}>
+    <div className="home">
       <div className="about">
         <h2>
           Hello I'm
@@ -38,17 +17,12 @@ function Home() {
             <EmailIcon />
             <GitHubIcon />
           </div>
-          <button
-            onClick={() => {
-              scrollToSection(skillLocation);
-            }}
-            className="navigationBtn"
-          >
-            <KeyboardArrowDownIcon />
-          </button>
+          <div className="scrollContainer">
+            <div className="crollDown"></div>
+          </div>
         </div>
       </div>
-      <div className="skills" ref={skillLocation}>
+      <div className="skills">
         <h1>Skills</h1>
         <ol className="list">
           <li className="item">
@@ -70,14 +44,6 @@ function Home() {
             <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
           </li>
         </ol>
-        <button
-          onClick={() => {
-            scrollToSection(topLocation);
-          }}
-          className="navigationTop"
-        >
-          <ExpandLessIcon />
-        </button>
       </div>
     </div>
   );
