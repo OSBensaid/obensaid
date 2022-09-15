@@ -16,11 +16,11 @@ function ProjectICard({ image, name, description, codeUrl, viewUrl, tags }) {
         </div>
         <p>{description}</p>
         <div className="projectBtns">
-          <a className="btn" href={codeUrl}>
+          <a className="btn" href={codeUrl} target="_blank" rel="noreferrer">
             <GitHubIcon />
             Code
           </a>
-          <a className="btn" href={viewUrl}>
+          <a className="btn" href={viewUrl} target="_blank" rel="noreferrer">
             <VisibilityIcon />
             Website
           </a>
