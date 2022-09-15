@@ -1,61 +1,38 @@
 const expriences = [
   {
-    id: 1,
-    title: "Frontend Developer",
-    location: "Dragontail, Ascana",
-    description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
-    date: "August 2016 - present",
-    icon: "work",
-  },
-  {
-    id: 2,
-    title: "Backend Developer",
-    location: "Skystead, Craonia",
-    description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-    buttonText: "View Backend Projects",
-    date: "June 2013 - August 2016",
-    icon: "work",
-  },
-  {
     id: 3,
-    title: "Quality Assurance Engineer",
-    location: "South Warren, Geshington",
+    title: "Certification - AWS Cloud Practitioner Essentials",
+    location: "Myrtle Beach, SC",
     description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-    buttonText: "Company Website",
-    date: "September 2011 - June 2013",
-    icon: "work",
-  },
-  {
-    id: 4,
-    title: "Oak Ridge College",
-    location: "South Warren, Geshington",
-    description:
-      "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "Course Certificate",
-    date: "September 2011",
+      "The AWS Certified Cloud Practitioner is an IT industry certification offered by Amazon. It's a certification that covers so many different AWS Cloud-related material, such as understanding essential cloud concepts and AWS services, security, architecture, pricing, and support.",
+    date: "September 2022 - Present",
     icon: "school",
   },
   {
-    id: 5,
-    title: "Hawking College",
-    location: "Skystead, Craonia",
+    id: 4,
+    title: "RadixBay - Full Stack Web Developer",
+    location: "Tybor City, NC",
     description:
-      "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "College Projects",
-    date: "2007 - 2011",
+      "RadixBay is Consulting and Managed Services with offices in Charlotte and Tabor City, NC. It is a model that combines the quality and security. Including application design, development, testing, cloud data infrastructure support, and project management.",
+    date: "Jun 2021 - Present",
+    icon: "work",
+  },
+  {
+    id: 5,
+    title: "AAS in Computer Technology - Programming",
+    location: "Myrtle Beach, SC",
+    description:
+      "Associate degree in Computer Technology - Programming, in Horry-Georgetown Technical College prepares students for entry-level positions in a vast number of industries. This degree provides skills in a variety of programming languages, such as Python, Java, JavaScript, HTML, CSS, Mobile Apps, and SQL.",
+    date: "2018 - 2021",
     icon: "school",
   },
   {
     id: 6,
-    title: "Marble Hills Grammar School",
-    location: "Dragontail, Ascana",
+    title: "GED - General Educational Development",
+    location: "Myrtle Beach, SC",
     description:
-      "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    date: "2003 - 2007",
+      "Myrtle Beach Family Learning Center is located in Myrtle Beach, SC. This school offers training, for General Educational Development (GED) Certification. I completed this education training ranges from 5 months to 6 months. The most commonly reported benefits of attending Myrtle Beach Family Learning Center Unit are Flexible class hours and a Positive environment.",
+    date: "2016 - 2017",
     icon: "school",
   },
 ];

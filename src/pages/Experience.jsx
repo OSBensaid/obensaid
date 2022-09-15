@@ -8,7 +8,7 @@ function Experience() {
       <h1>Experience</h1>
       <div className="timeline">
         {expriences.map((exprience) => (
-          <div className="experienceWrapper">
+          <div className="experienceWrapper" key={exprience.id}>
             <div className="experienceCard">
               <div className="experienceIcon">
                 {exprience.icon === "work" ? <WorkIcon /> : <SchoolIcon />}

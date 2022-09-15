@@ -13,9 +13,27 @@ function Home() {
         <div className="prompt">
           <p>A software developer with passion for learning and creating.</p>
           <div className="links">
-            <LinkedInIcon />
-            <EmailIcon />
-            <GitHubIcon />
+            <a
+              href="https://www.linkedin.com/in/oussama-bensaid"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="mailto:osbensaid@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <EmailIcon />
+            </a>
+            <a
+              href="https://github.com/OSBensaid"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon />
+            </a>
           </div>
           <div className="scrollContainer">
             <div className="crollDown"></div>
@@ -28,20 +46,20 @@ function Home() {
           <li className="item">
             <h2> Front-End</h2>
             <span>
-              ReactJS, Angular, Redux, HTML, CSS, React Native, Flutter, NPM,
-              Ionic, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+              ReactJS, VueJS, Redux, HTML, CSS, SASS, NPM, BootStrap,
+              MaterialUI, Chakra UI, Ant Design, Yarn, StyledComponents,
+              StoryBook
             </span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
             <span>
-              NodeJS, Java Spring, .NET, ExpressJS, GraphQL, ApolloServer,
-              MySQL, MongoDB, DynamoDB, DigitalOcean, AWS S3, MS SQL
+              NodeJS, ExpressJS, Axios, NestJS, TypeORM, MySQL, MongoDB, MS SQL
             </span>
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
+            <span>JavaScript, Java, Python, TypeScript</span>
           </li>
         </ol>
       </div>

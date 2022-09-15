@@ -1,7 +1,4 @@
 import image1 from "../assets/001.png";
-import image2 from "../assets/002.jpg";
-import image3 from "../assets/003.jpg";
-import image4 from "../assets/004.webp";
 import image5 from "../assets/005.jpg";
 import image6 from "../assets/006.jpg";
 const projects = [
@@ -10,59 +7,29 @@ const projects = [
     name: "Resposive Persolnal Protfolio",
     image: image1,
     description:
-      "OBensaid is a fully responsive personal portfolio website, responsive for all devices.",
+      "The project is a fully responsive personal portfolio website, responsive for all devices, built using React, CSS, and JavaScript. The project is fully open source. I am using the Material UI Library for displaying icons. Whether you are a web developer who wants to create a professional portfolio on its own, it can benefit you from this project.",
     codeUrl: "https://github.com/OSBensaid/obensaid",
     viewUrl: "https://osbensaid.github.io/obensaid/",
-    tags: ["React", "CSS", "HTML", "JavaScript"],
-  },
-  {
-    id: 2,
-    name: "Social Media Website",
-    image: image2,
-    description:
-      "DevMemphis is a general purpose user group for software developers in Memphis TN. George started DevMemphis in 2018 with several other user group leaders with the goal of accommodating a more diverse range of topics and formats.",
-    codeUrl: "https://github.com/OSBensaid/obensaid",
-    viewUrl: "https://osbensaid.github.io/obensaid/",
-    tags: ["React", "CSS", "HTML", "JavaScript"],
+    tags: ["React", "CSS", "HTML", "JavaScript", "Material UI Icons"],
   },
   {
     id: 3,
-    name: "Spotify Clone",
-    image: image3,
+    name: "Ecommerce Website",
+    image: image5,
     description:
-      "DevMemphis is a general purpose user group for software developers in Memphis TN. George started DevMemphis in 2018 with several other user group leaders with the goal of accommodating a more diverse range of topics and formats.",
-    codeUrl: "https://github.com/OSBensaid/obensaid",
-    viewUrl: "https://osbensaid.github.io/obensaid/",
+      "This project is under construction, it is a E-Commerce system to easily start your online E-Commerce business. It has a powerful admin panel for managing products, categories, coupons, orders, pages, and much more.  it is extremely optimized for giving customers the best purchasing experience. ",
+    codeUrl: "https://github.com/OSBensaid",
+    viewUrl: "https://github.com/OSBensaid",
     tags: ["React", "CSS", "HTML", "JavaScript"],
   },
   {
     id: 4,
-    name: "Mobile Game",
-    image: image4,
-    description:
-      "DevMemphis is a general purpose user group for software developers in Memphis TN. George started DevMemphis in 2018 with several other user group leaders with the goal of accommodating a more diverse range of topics and formats.",
-    codeUrl: "https://github.com/OSBensaid/obensaid",
-    viewUrl: "https://osbensaid.github.io/obensaid/",
-    tags: ["React", "CSS", "HTML", "JavaScript"],
-  },
-  {
-    id: 5,
-    name: "Ecommerce Website",
-    image: image5,
-    description:
-      "DevMemphis is a general purpose user group for software developers in Memphis TN. George started DevMemphis in 2018 with several other user group leaders with the goal of accommodating a more diverse range of topics and formats.",
-    codeUrl: "https://github.com/OSBensaid/obensaid",
-    viewUrl: "https://osbensaid.github.io/obensaid/",
-    tags: ["React", "CSS", "HTML", "JavaScript"],
-  },
-  {
-    id: 6,
-    name: "Management System",
+    name: "Learning Management System",
     image: image6,
     description:
-      "DevMemphis is a general purpose user group for software developers in Memphis TN. George started DevMemphis in 2018 with several other user group leaders with the goal of accommodating a more diverse range of topics and formats.",
-    codeUrl: "https://github.com/OSBensaid/obensaid",
-    viewUrl: "https://osbensaid.github.io/obensaid/",
+      "This project is under construction, Learning Management System purposely designed and built for Online Courses and Education website! It is perfectly suitable for educational institutes, online course providers, online training, online school, virtual live class, etc., websites. The template is created with ReactJS, NextJS, MySQL, Bootstrap, and Sass. Stripe Payment gateway is integrated.",
+    codeUrl: "https://github.com/OSBensaid",
+    viewUrl: "https://github.com/OSBensaid",
     tags: ["React", "CSS", "HTML", "JavaScript"],
   },
 ];

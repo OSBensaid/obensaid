@@ -1,5 +1,5 @@
 .footer {
-  background: #21325e;
+  background: var(--primary-color);
   height: 70px;
   width: 100%;
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 .footer p {
-  color: #fff;
+  color: var(--bg-color);
 }
 
 /* Small than 600px */

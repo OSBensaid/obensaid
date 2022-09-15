@@ -4,10 +4,11 @@
   flex-direction: column;
   align-items: center;
   margin: 70px auto;
-  background-color: #fff;
+  background-color: var(--bg-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
+  width: 100%;
 }
 
 .experience h1 {
@@ -35,7 +36,7 @@
     to bottom,
     rgba(80, 80, 80, 0) 0%,
     #394e85 8%,
-    #21325e 92%,
+    var(--primary-color) 92%,
     rgba(80, 80, 80, 0) 100%
   );
 }
@@ -61,13 +62,13 @@
 }
 
 .experienceIcon svg {
-  border: 5px solid #fff;
-  background: #21325e;
+  border: 5px solid var(--bg-color);
+  background: var(--primary-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
   padding: 3px;
-  color: #fff;
+  color: var(--bg-color);
 }
 
 .experienceWrapper:nth-of-type(odd) .experienceIcon {
@@ -84,7 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #21325e;
+  color: var(--primary-color);
   margin-bottom: 7px;
 }
 
@@ -95,7 +96,6 @@
 .exprienceDesc {
   color: #47525c;
   font-size: 16px;
-  height: 110px;
   text-align: justify;
   text-justify: inter-word;
   overflow: hidden;
@@ -113,13 +113,13 @@
   }
 
   .experienceIcon svg {
-    border: 3px solid #fff;
-    background: #21325e;
+    border: 3px solid var(--bg-color);
+    background: var(--primary-color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
     padding: 1px;
-    color: #fff;
+    color: var(--bg-color);
   }
 
   .experienceWrapper:nth-of-type(even) .experienceIcon {
@@ -129,6 +129,7 @@
   .experienceWrapper:nth-of-type(odd) .experienceIcon {
     position: absolute;
     left: -20px;
+    right: 0px;
   }
 
   .experienceTitle {
@@ -137,9 +138,8 @@
 }
 
 /* Tablet */
-/* @media only screen and (min-width: 321px) and (max-width: 1250px) {
-  .timeline {
+@media only screen and (min-width: 610px) and (max-width: 1250px) {
+  .experience {
     width: 100%;
-    padding: 1em;
   }
-} */
+}
